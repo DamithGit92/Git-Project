@@ -79,3 +79,9 @@ git checkout master
 git merge Testing
 vi index.html
 git status
+    #master branch change to production
+git checkout -b release master    
+git push -u origin release        
+git branch -d master              
+git push --delete origin master   
+git remote prune origin
